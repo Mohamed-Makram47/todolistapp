@@ -1,0 +1,166 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #121212;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #e0e0e0;
+}
+
+.container {
+    position: relative;
+    width: 500px;
+    background-color: #1c1c1c;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+    border-radius: 12px;
+    padding: 30px;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.container:hover {
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.9);
+}
+
+.form {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+    gap: 15px;
+}
+
+.input {
+    width: 85%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #333;
+    font-size: 16px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    background-color: #2a2a2a;
+    color: #e0e0e0;
+}
+
+.input:focus {
+    border-color: #27ae60;
+    outline: none;
+    box-shadow: 0 0 10px rgba(39, 174, 96, 0.5);
+}
+
+.add {
+    width: 120px;
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    background-color: #27ae60;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.add:hover {
+    transform: scale(1.05);
+}
+
+.task {
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #1c1c1c;
+    border: 1px solid #333;
+    min-height: 60px;
+}
+
+.added {
+    background-color: #333;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 12px;
+    color: #e0e0e0;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.3s;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.added.done {
+    background-color: #27ae60;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 12px;
+    color: white;
+    font-size: 16px;
+    transition: transform 0.3s;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.added:hover {
+    transform: scale(1.03);
+    cursor: pointer;
+}
+
+.added:not(.done) > .delet , .donee {
+    display: block;
+}
+
+.added.done > .delet {
+    display: block;
+    transition-duration: 300ms;
+}
+
+.delet {
+    background-color: #c0392b;
+    padding: 7px 10px;
+    border-radius: 8px;
+    transition-duration: 300ms;
+    color: white;
+    font-weight: bold;
+}
+
+.delet:hover {
+    transform: scale(1.1);
+    background-color: #a93226;
+}
+
+.donee {
+    background-color: #27ae60;
+    padding: 7px 10px;
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+    transition: transform 0.3s;
+}
+
+.donee:hover {
+    transform: scale(1.1);
+}
+
+.btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    margin-right: 5px;
+}
+
+.res {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:#27ae60;
+    padding: 7px 10px;
+    border-radius: 8px;
+    transition-duration: 300ms;
+    color: white;
+    font-weight: bold;
+}
+
+.res:hover {
+    transform: scale(1.03);
+    background-color: #27ae60;
+}
+
